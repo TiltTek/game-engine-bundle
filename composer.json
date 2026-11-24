@@ -1,6 +1,6 @@
 {
     "name": "tilttek/game-engine-bundle",
-    "description": "Online tables for Symfony on tilttek/game-engine: logs kept by Doctrine DBAL, states cached in a PSR-6 pool, a lock per table, changes published on Mercure with identifiers only, the view of a seat and the log of a finished table, commands to create tables and verify logs, and a Stimulus controller",
+    "description": "tilttek/game-engine in Symfony: online tables stored in the database, a lock per table, every change pushed live by Mercure, and each seat's own view.",
     "license": "MIT",
     "type": "symfony-bundle",
     "keywords": [
@@ -24,14 +24,15 @@
     "homepage": "https://ph-il.ca",
     "require": {
         "php": ">=8.5",
-        "doctrine/dbal": "^4.5",
+        "doctrine/dbal": "^4.6",
         "symfony/config": "^8.2",
         "symfony/dependency-injection": "^8.2",
         "tilttek/game-engine": "^0.1@dev"
     },
     "require-dev": {
-        "doctrine/doctrine-bundle": "^3.3",
-        "doctrine/orm": "^3.7",
+        "doctrine/doctrine-bundle": "^3.4",
+        "doctrine/orm": "^3.8",
+        "phil/ux-kit": ">=0.5.0-alpha <1.0",
         "phpunit/phpunit": "^13.4",
         "psr/cache": "^3.0",
         "psr/log": "^3.0",
@@ -48,9 +49,9 @@
         "symfony/routing": "^8.2",
         "symfony/translation": "^8.2",
         "symfony/twig-bundle": "^8.2",
-        "symfony/ux-twig-component": "^3.7",
+        "symfony/ux-twig-component": "^3.8",
         "symfony/yaml": "^8.2",
-        "twig/twig": "^3.21"
+        "twig/twig": "^3.31"
     },
     "suggest": {
         "doctrine/orm": "To add the tables of the logs to the schema the ORM generates, and so to the migrations",

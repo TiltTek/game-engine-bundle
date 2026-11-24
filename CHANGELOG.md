@@ -4,6 +4,16 @@ All notable changes to `tilttek/game-engine-bundle` will be documented in this f
 
 Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) principles.
 
+## 0.2.1-alpha - 2026-11-24
+
+### Changed
+
+- `phil/ux-kit` is a development requirement: the functional test renders the template of a table with its recipes
+  Card and Badge read from `vendor/`, and checks their markup on every run, without looking for the kit beside the
+  repository.
+- Requires the latest minor of each dependency: `doctrine/orm` 3.8, `doctrine/dbal` 4.6, `doctrine/doctrine-bundle` 3.4,
+  `twig/twig` 3.31, `symfony/ux-twig-component` 3.8.
+
 ## 0.2.0-alpha - 2026-11-14
 
 ### Fixed
